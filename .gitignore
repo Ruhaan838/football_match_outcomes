@@ -1,0 +1,11 @@
+
+# envs
+/envs/etc
+/envs/pds_env
+
+#data
+/data
+
+__pycache__
+
+/weigths
