@@ -70,7 +70,7 @@ def plot_feature_correlation(df):
     plt.title("Feature Correlation Heatmap")
     plt.show()
 
-def main():
+if __name__ == "__main__":
     df = process_football_data(APIkey.api_key)
     plot_goal_distributions(df)
     df = plot_total_goals(df)
@@ -78,6 +78,3 @@ def main():
     plot_match_result_distribution(df)
     plot_top_scorelines(df)
     plot_feature_correlation(df)
-
-if __name__ == "__main__":
-    main()

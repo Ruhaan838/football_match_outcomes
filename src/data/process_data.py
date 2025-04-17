@@ -15,6 +15,7 @@ def fetch_data(api_key, years=[2021, 2022, 2023], verbose=False):
         data_frames.append(df)
 
     data = pd.concat(data_frames)
+    data.to_csv("data/football_data.csv")
     if verbose:
         print("All columns:", data.keys())
     return data
@@ -135,4 +136,4 @@ def process_football_data(api_key, verbose=False):
     return data
 
 if __name__ == "__main__":
-    final_data = process_football_data(APIkey.api_key, verbose=False)  
+    final_data = process_football_data(APIkey.api_key, verbose=True)  

@@ -32,7 +32,7 @@ class RegressionModel:
         return test_pred, y_test
     
     def save(self, root:str="weigths"):
-        path = os.path.join(root, "m_classify.joblib")
+        path = os.path.join(root, "regression.joblib")
         if os.path.exists:
            warnings.warn(f"Model is overiding to because the same dir, the same model name is exist") 
            return

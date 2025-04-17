@@ -42,7 +42,7 @@ def check_normality(df, columns):
         plt.tight_layout()
         plt.show()
 
-def main():
+if __name__ == "__main__":
     df = process_football_data(APIkey.api_key)
     
     numeric_cols = [
@@ -55,6 +55,3 @@ def main():
     compute_central_tendency(df, numeric_cols + ['total_goals'])
     compute_spread(df, numeric_cols + ['total_goals'])
     check_normality(df, numeric_cols + ['total_goals'])
-
-if __name__ == "__main__":
-    main()
