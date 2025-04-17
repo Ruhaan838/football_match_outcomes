@@ -4,8 +4,7 @@ import os
 
 app = Flask(__name__)
 
-# 📌 Hardcoded path to your CSV file (edit this as needed)
-CSV_PATH = 'data/football_data.csv'  # <-- update this!
+CSV_PATH = 'data/football_data.csv' 
 
 HTML_TEMPLATE = '''
 <!doctype html>
