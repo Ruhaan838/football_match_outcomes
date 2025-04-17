@@ -1,0 +1,4 @@
+name: /Users/ruhaan/Documents/PDS-OEP/envs/pds_env
+channels:
+  - defaults
+prefix: /Users/ruhaan/Documents/PDS-OEP/envs/pds_env
